@@ -12,7 +12,7 @@ public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
 	public Match process(final MatchInput matchInput) throws Exception {
 
 		Match match = new Match();
-		match.setID(Long.parseLong(matchInput.getID()));
+		match.setId(Long.parseLong(matchInput.getID()));
 		match.setCity(matchInput.getCity());
 		match.setDate(LocalDate.parse(matchInput.getDate()));
 		match.setPlayerOfMatch(matchInput.getPlayer_of_Match());

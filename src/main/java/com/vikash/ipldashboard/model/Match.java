@@ -10,180 +10,138 @@ import javax.persistence.Id;
 public class Match {
 
 	@Id
-	private long ID;
-	private String City;
-	private LocalDate Date;
-	private String Season;
+	private long id;
+	private String city;
+	private LocalDate date;
+	private String season;
 	private String gameNumber;
-	private String Team1;
-	private String Team2;
-	private String Venue;
-	private String TossWinner;
-	private String TossDecision;
-	private String SuperOver;
-	private String WinningTeam;
-	private String WonBy;
-	private String Margin;
-	private String PlayerOfMatch;
-	private String TeamOnePlayers;
-	private String TeamTwoPlayers;
-	private String Umpire1;
-	private String Umpire2;
-
-	public long getID() {
-		return ID;
+	private String team1;
+	private String team2;
+	private String venue;
+	private String tossWinner;
+	private String tossDecision;
+	private String superOver;
+	private String winningTeam;
+	private String wonBy;
+	private String margin;
+	private String playerOfMatch;
+	private String teamOnePlayers;
+	private String teamTwoPlayers;
+	private String umpire1;
+	private String umpire2;
+	public long getId() {
+		return id;
 	}
-
-	public void setID(long iD) {
-		ID = iD;
+	public void setId(long id) {
+		this.id = id;
 	}
-
 	public String getCity() {
-		return City;
+		return city;
 	}
-
 	public void setCity(String city) {
-		City = city;
+		this.city = city;
 	}
-
 	public LocalDate getDate() {
-		return Date;
+		return date;
 	}
-
 	public void setDate(LocalDate date) {
-		Date = date;
+		this.date = date;
 	}
-
 	public String getSeason() {
-		return Season;
+		return season;
 	}
-
 	public void setSeason(String season) {
-		Season = season;
+		this.season = season;
 	}
-
-
-
 	public String getGameNumber() {
 		return gameNumber;
 	}
-
 	public void setGameNumber(String gameNumber) {
 		this.gameNumber = gameNumber;
 	}
-
 	public String getTeam1() {
-		return Team1;
+		return team1;
 	}
-
 	public void setTeam1(String team1) {
-		Team1 = team1;
+		this.team1 = team1;
 	}
-
 	public String getTeam2() {
-		return Team2;
+		return team2;
 	}
-
 	public void setTeam2(String team2) {
-		Team2 = team2;
+		this.team2 = team2;
 	}
-
 	public String getVenue() {
-		return Venue;
+		return venue;
 	}
-
 	public void setVenue(String venue) {
-		Venue = venue;
+		this.venue = venue;
 	}
-
 	public String getTossWinner() {
-		return TossWinner;
+		return tossWinner;
 	}
-
 	public void setTossWinner(String tossWinner) {
-		TossWinner = tossWinner;
+		this.tossWinner = tossWinner;
 	}
-
 	public String getTossDecision() {
-		return TossDecision;
+		return tossDecision;
 	}
-
 	public void setTossDecision(String tossDecision) {
-		TossDecision = tossDecision;
+		this.tossDecision = tossDecision;
 	}
-
 	public String getSuperOver() {
-		return SuperOver;
+		return superOver;
 	}
-
 	public void setSuperOver(String superOver) {
-		SuperOver = superOver;
+		this.superOver = superOver;
 	}
-
 	public String getWinningTeam() {
-		return WinningTeam;
+		return winningTeam;
 	}
-
 	public void setWinningTeam(String winningTeam) {
-		WinningTeam = winningTeam;
+		this.winningTeam = winningTeam;
 	}
-
 	public String getWonBy() {
-		return WonBy;
+		return wonBy;
 	}
-
 	public void setWonBy(String wonBy) {
-		WonBy = wonBy;
+		this.wonBy = wonBy;
 	}
-
 	public String getMargin() {
-		return Margin;
+		return margin;
 	}
-
 	public void setMargin(String margin) {
-		Margin = margin;
+		this.margin = margin;
 	}
-
 	public String getPlayerOfMatch() {
-		return PlayerOfMatch;
+		return playerOfMatch;
 	}
-
 	public void setPlayerOfMatch(String playerOfMatch) {
-		PlayerOfMatch = playerOfMatch;
+		this.playerOfMatch = playerOfMatch;
 	}
-
-	
-
 	public String getTeamOnePlayers() {
-		return TeamOnePlayers;
+		return teamOnePlayers;
 	}
-
 	public void setTeamOnePlayers(String teamOnePlayers) {
-		TeamOnePlayers = teamOnePlayers;
+		this.teamOnePlayers = teamOnePlayers;
 	}
-
 	public String getTeamTwoPlayers() {
-		return TeamTwoPlayers;
+		return teamTwoPlayers;
 	}
-
 	public void setTeamTwoPlayers(String teamTwoPlayers) {
-		TeamTwoPlayers = teamTwoPlayers;
+		this.teamTwoPlayers = teamTwoPlayers;
 	}
-
 	public String getUmpire1() {
-		return Umpire1;
+		return umpire1;
 	}
-
 	public void setUmpire1(String umpire1) {
-		Umpire1 = umpire1;
+		this.umpire1 = umpire1;
 	}
-
 	public String getUmpire2() {
-		return Umpire2;
+		return umpire2;
 	}
-
 	public void setUmpire2(String umpire2) {
-		Umpire2 = umpire2;
+		this.umpire2 = umpire2;
 	}
 
 	

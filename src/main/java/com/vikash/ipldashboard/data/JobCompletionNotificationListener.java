@@ -36,13 +36,13 @@ public class JobCompletionNotificationListener extends JobExecutionListenerSuppo
 			
 			Map<String, Team> teamData = new HashMap<>();
 
-			 em.createQuery("select  m.Team1, count(*)  from Match  m group by m.Team1", Object[].class)
+			 em.createQuery("select  m.team1, count(*)  from Match  m group by m.team1", Object[].class)
 					.getResultList()
 					.stream()
 					.map(e -> new Team((String)e[0],(long)e[1]))
 					.forEach(team -> teamData.put(team.getTeamName(), team));
 			 
-			 em.createQuery("select  m.Team2, count(*)  from Match  m group by m.Team2", Object[].class)
+			 em.createQuery("select  m.team2, count(*)  from Match  m group by m.team2", Object[].class)
 				.getResultList()
 				.stream()
 				.forEach(e -> {
@@ -50,7 +50,7 @@ public class JobCompletionNotificationListener extends JobExecutionListenerSuppo
 					team.setTotalMatches(team.getTotalMatches() + (long) e[1]);
 				});
 			 
-			 em.createQuery("select m.WinningTeam, count(*) from Match m group by m.WinningTeam", Object[].class)
+			 em.createQuery("select m.winningTeam, count(*) from Match m group by m.winningTeam", Object[].class)
 			 .getResultList()
 			 .stream()
 			 .forEach(e -> {
@@ -59,9 +59,13 @@ public class JobCompletionNotificationListener extends JobExecutionListenerSuppo
 
 			 });
 			 
+			 
+			 
 			 teamData.values().forEach(team -> em.persist(team));
 			 teamData.values().forEach(team -> System.out.println(team));
 
 		}
 	}
+	
+	
 }
