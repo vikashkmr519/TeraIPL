@@ -1,5 +1,6 @@
 package com.vikash.ipldashboard.service;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,11 @@ public class MatchService {
 	public List<Match> findLastestMatchesByTeam(String teamName, int count){
 		
 		return this.matchRepository.findLastestMatchesByTeam(teamName, count);
+	}
+	
+	public List<Match> getMatchesByTeamBetweenDate(String teamName, LocalDate startDate, LocalDate endDate){
+		
+		return this.matchRepository.getMatchesByTeamBetweenDates(teamName, startDate, endDate);
 	}
 
 }
