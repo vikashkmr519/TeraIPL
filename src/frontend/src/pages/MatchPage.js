@@ -1,6 +1,7 @@
 import { React, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { MatchDetailCard } from '../components/MatchDetailCard'
+import { TeamDidNotPlayed } from '../components/TeamDidNotPlayed'
 import './MatchPage.scss'
 import { YearSelector } from './YearSelector'
 
@@ -29,13 +30,19 @@ export const MatchPage = () => {
         <h1 className="page-heading">
           Matches of {teamName} in {year}
         </h1>
-        {matches.map((match) => (
-          <MatchDetailCard
-            teamName={match.team1}
-            match={match}
-            key={match.id}
-          />
-        ))}
+        {matches.length == 0 ? (
+          <h1 className="team-did-not-played">
+            Team did not played this season
+          </h1>
+        ) : (
+          matches.map((match) => (
+            <MatchDetailCard
+              teamName={match.team1}
+              match={match}
+              key={match.id}
+            />
+          ))
+        )}
       </div>
     </div>
   )
