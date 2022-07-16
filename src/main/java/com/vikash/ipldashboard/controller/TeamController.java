@@ -24,6 +24,11 @@ public class TeamController {
 	
 	@Autowired
 	private MatchService matchService;
+	
+	@GetMapping("/teams")
+	public List<Team> getAllTeam(){
+		return this.teamService.findAll();
+	}
 
 	@GetMapping("/team/{teamName}/{count}")
 	public Team getTeam( @PathVariable("teamName")String teamName, @PathVariable("count")int count) {

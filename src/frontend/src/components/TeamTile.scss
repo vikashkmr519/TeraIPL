@@ -1,0 +1,20 @@
+.TeamTile {
+  height: 200px;
+  text-align: center;
+  border: 1px solid white;
+  margin-top: 10px;
+  background-image: linear-gradient(
+    to right top,
+    #371f05,
+    #654607,
+    #8b7600,
+    #a4ae00,
+    #a8eb12
+  );
+
+  .team-name {
+    background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
