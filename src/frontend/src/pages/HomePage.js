@@ -26,6 +26,7 @@ export const HomePage = () => {
             teamName={team.teamName}
             totalMatches={team.totalMatches}
             totalWins={team.totalWins}
+            key={team.id}
           ></TeamTile>
         ))}
       </div>

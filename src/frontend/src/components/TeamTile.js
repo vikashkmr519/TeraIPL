@@ -1,6 +1,5 @@
 import React from 'react'
 import './TeamTile.scss'
-import { PieChart } from 'react-minimal-pie-chart'
 import { Link } from 'react-router-dom'
 
 export const TeamTile = ({ teamName, totalMatches, totalWins }) => {

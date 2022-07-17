@@ -11,9 +11,11 @@ export const YearSelector = ({ teamName }) => {
     years.push(i)
   }
   return years.map((year) => (
-    <div className="YearSelector">
+    <div className="YearSelector" key={year}>
       <li className="list-item" key={year}>
-        <Link to={`/teams/${teamName}/matches/${year}`}>{year}</Link>
+        <Link key={year} to={`/teams/${teamName}/matches/${year}`}>
+          {year}
+        </Link>
       </li>
     </div>
   ))
