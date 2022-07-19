@@ -4,6 +4,11 @@
   grid-template-rows: 1fr 1fr 1fr;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
+  margin: auto 30px;
+
+  .Header {
+    grid-column: span 4;
+  }
 
   .team-name-section {
     grid-column: span 3;
@@ -13,6 +18,7 @@
 
   .team-name {
     font-size: 4rem;
+    color: black;
   }
 
   .win-loss-section {

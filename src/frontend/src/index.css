@@ -17,13 +17,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   color: white;
-  max-width: 1200px;
+  background: radial-gradient(
+    circle at 0% 0.5%,
+    rgb(241, 241, 242) 0.1%,
+    rgb(224, 226, 228) 100.2%
+  );
   margin: 0 auto;
   /* Created with https://www.css-gradient.com */
   /* Created with https://www.css-gradient.com */
-
-  background: #e86817;
-  background: -webkit-linear-gradient(top left, #e86817, #b77131);
-  background: -moz-linear-gradient(top left, #e86817, #b77131);
-  background: linear-gradient(to bottom right, #e86817, #b77131);
 }

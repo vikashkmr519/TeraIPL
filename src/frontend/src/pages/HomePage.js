@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Header } from '../components/Header'
 import { TeamTile } from '../components/TeamTile'
 import './HomePage.scss'
 
@@ -16,19 +17,22 @@ export const HomePage = () => {
   }, [])
 
   return (
-    <div className="HomePage">
-      <div className="header-section">
-        <h1 className="app-name">Tera IPL : Get all details of IPL</h1>
-      </div>
-      <div className="team-grid">
-        {teams.map((team) => (
-          <TeamTile
-            teamName={team.teamName}
-            totalMatches={team.totalMatches}
-            totalWins={team.totalWins}
-            key={team.id}
-          ></TeamTile>
-        ))}
+    <div className="HomePageOuter">
+      <Header />
+      <div className="HomePage">
+        <div className="header-section">
+          <h1 className="app-name">Tera IPL : Get all details of IPL</h1>
+        </div>
+        <div className="team-grid">
+          {teams.map((team) => (
+            <TeamTile
+              teamName={team.teamName}
+              totalMatches={team.totalMatches}
+              totalWins={team.totalWins}
+              key={team.id}
+            ></TeamTile>
+          ))}
+        </div>
       </div>
     </div>
   )

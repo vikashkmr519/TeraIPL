@@ -1,0 +1,34 @@
+.Header {
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  .Logo {
+    max-width: 100px;
+    max-height: 100px;
+    padding: 10px;
+  }
+
+  .Home {
+    margin-right: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+  }
+
+  //   .Title {
+  //     box-sizing: border-box;
+  //     width: 50%;
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: baseline;
+  //     padding: 1em;
+  //     margin-bottom: 2em;
+  //     font-size: 30px;
+  //     font-weight: 500;
+  //     color: #fff;
+  //   }
+}
