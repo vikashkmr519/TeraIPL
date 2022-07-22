@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Header } from '../components/Header'
+import { ImageSlider } from '../components/ImageSlider'
 import { TeamTile } from '../components/TeamTile'
 import './HomePage.scss'
 
@@ -19,6 +20,9 @@ export const HomePage = () => {
   return (
     <div className="HomePageOuter">
       <Header />
+      <div>
+        <ImageSlider />
+      </div>
       <div className="HomePage">
         <div className="header-section">
           <h1 className="app-name">Tera IPL : Get all details of IPL</h1>
