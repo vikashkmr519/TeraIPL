@@ -3,6 +3,7 @@ import { Header } from '../components/Header'
 import { ImageSlider } from '../components/ImageSlider'
 import { TeamTile } from '../components/TeamTile'
 import './HomePage.scss'
+import { DataSlider } from '../components/DataSlider'
 
 export const HomePage = () => {
   const [teams, setTeams] = useState([])
@@ -16,12 +17,13 @@ export const HomePage = () => {
     }
     getAllTeams()
   }, [])
-
+  const slide = []
+  DataSlider.map((img) => slide.push(img))
   return (
     <div className="HomePageOuter">
       <Header />
-      <div>
-        <ImageSlider />
+      <div className="ImageSlider">
+        <ImageSlider slides={slide} />
       </div>
       <div className="HomePage">
         <div className="header-section">
