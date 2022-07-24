@@ -4,6 +4,7 @@ import { ImageSlider } from '../components/ImageSlider'
 import { TeamTile } from '../components/TeamTile'
 import './HomePage.scss'
 import { DataSlider } from '../components/DataSlider'
+import { Footer } from '../components/Footer'
 
 export const HomePage = () => {
   const [teams, setTeams] = useState([])
@@ -27,7 +28,7 @@ export const HomePage = () => {
       </div>
       <div className="HomePage">
         <div className="header-section">
-          <h1 className="app-name">Tera IPL : Get all details of IPL</h1>
+          <h1 className="app-name">Tera IPL : Madness Of IPL</h1>
         </div>
         <div className="team-grid">
           {teams.map((team) => (
@@ -40,6 +41,7 @@ export const HomePage = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

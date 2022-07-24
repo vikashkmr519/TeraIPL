@@ -14,7 +14,7 @@ export const YearSelector = ({ teamName }) => {
     <div className="YearSelector" key={year}>
       <li className="list-item" key={year}>
         <Link key={year} to={`/teams/${teamName}/matches/${year}`}>
-          {year}
+          <h3 className="text">{year}</h3>
         </Link>
       </li>
     </div>

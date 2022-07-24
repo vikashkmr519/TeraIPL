@@ -60,7 +60,7 @@ export const TeamPage = () => {
           <Link
             to={`/teams/${teamName}/matches/${process.env.REACT_APP_DATA_END_YEAR}`}
           >
-            More>>
+            <p className="more">More>></p>
           </Link>
         </div>
       </div>

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { TeamPage } from './pages/TeamPage'
 import { MatchPage } from './pages/MatchPage'
 import { HomePage } from './pages/HomePage'
+import { Footer } from './components/Footer'
 
 function App() {
   return (
