@@ -4,7 +4,6 @@ import { ImageSlider } from '../components/ImageSlider'
 import { TeamTile } from '../components/TeamTile'
 import './HomePage.scss'
 import { DataSlider } from '../components/DataSlider'
-import { Footer } from '../components/Footer'
 
 export const HomePage = () => {
   const [teams, setTeams] = useState([])
@@ -41,7 +40,6 @@ export const HomePage = () => {
           ))}
         </div>
       </div>
-      <Footer />
     </div>
   )
 }

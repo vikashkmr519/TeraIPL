@@ -1,0 +1,12 @@
+.AboutUs {
+  color: black;
+  .aboutUsText {
+    text-align: center;
+    width: 100%;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-around;
+  }
+}
