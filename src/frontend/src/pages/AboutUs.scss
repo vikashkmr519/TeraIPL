@@ -8,5 +8,60 @@
   .content {
     display: flex;
     justify-content: space-around;
+    height: 50%;
+    flex-wrap: wrap;
+    // column-gap: 30px;
+    margin-bottom: 50px;
+
+    .content-text {
+      margin: 20px;
+      width: 70vw;
+      max-height: 160vh;
+      box-sizing: border-box;
+      border-radius: 20px;
+      box-shadow: 10px 10px 5px gray;
+      text-align: center;
+      .text {
+        padding: 30px;
+        font-family: 'Ibarra Real Nova';
+        margin-top: 40px;
+      }
+    }
+
+    .MyImage {
+      max-height: 100vh;
+      max-width: 50%;
+      border-radius: 20px;
+      margin: 20px;
+
+      .Image {
+        max-height: 300px;
+        max-width: 100%;
+        border-radius: 20px;
+        box-shadow: 10px 10px 5px gray;
+      }
+    }
+  }
+
+  .socialText {
+    display: flex;
+    align-items: center;
+    .text {
+      align-self: center;
+    }
+  }
+
+  .socials {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+    & > div {
+      height: 20vh;
+      width: 20%;
+      box-shadow: 20px 20px 30px gray;
+      border-radius: 20px;
+    }
   }
 }
