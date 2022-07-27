@@ -10,6 +10,9 @@ export const Header = () => {
         <Link to="/">
           <h3 className="text">Home</h3>
         </Link>
+        <Link to="/aboutus">
+          <h3 className="text">About Us</h3>
+        </Link>
       </div>
     </div>
   )

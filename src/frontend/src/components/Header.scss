@@ -18,9 +18,12 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     color: azure;
+    display: flex;
+    justify-content: space-around;
 
     .text {
       color: azure;
+      margin-left: 20px;
     }
   }
 }

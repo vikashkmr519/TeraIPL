@@ -24,5 +24,11 @@ public class MatchService {
 		
 		return this.matchRepository.getMatchesByTeamBetweenDates(teamName, startDate, endDate);
 	}
+	
+	public Match getMatch(Long matchId) {
+		
+		return this.matchRepository.getById(matchId);
+		
+	}
 
 }

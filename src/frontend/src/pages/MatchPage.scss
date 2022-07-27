@@ -19,6 +19,8 @@
 
     .team-did-not-played {
       outline: 1px solid white;
+      color: black;
+      box-shadow: 5px 5px 10px gray;
       height: 200px;
       width: 500px;
       padding: 70px;
@@ -26,6 +28,11 @@
       align-self: center;
       border-radius: 20px;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-between;
     }
   }
 }

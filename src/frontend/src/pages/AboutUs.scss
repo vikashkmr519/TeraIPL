@@ -46,6 +46,8 @@
   .socialText {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
     .text {
       align-self: center;
     }
@@ -57,11 +59,20 @@
     flex-wrap: wrap;
     margin-bottom: 40px;
 
-    & > div {
-      height: 20vh;
-      width: 20%;
-      box-shadow: 20px 20px 30px gray;
-      border-radius: 20px;
+    .social-box {
+      height: 80%;
+      width: 80%;
+
+      margin: 10px 10px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        height: 70%;
+        width: 70%;
+      }
     }
   }
 }

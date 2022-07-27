@@ -16,6 +16,7 @@ export const MatchPage = () => {
       )
       const data = await response.json()
       setMatches(data)
+      console.log(data)
     }
     fetchMatches()
   }, [teamName, year])
@@ -35,6 +36,36 @@ export const MatchPage = () => {
           {matches.length === 0 ? (
             <h1 className="team-did-not-played">
               Team did not played this season
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+                id="IconChangeColor"
+                height="86"
+                width="86"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <circle
+                  cx="128"
+                  cy="128"
+                  r="96"
+                  fill="none"
+                  stroke="#000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="24"
+                ></circle>
+                <circle cx="92" cy="108" r="16"></circle>
+                <circle cx="164" cy="108" r="16"></circle>
+                <path
+                  d="M165.3,169.8a48,48,0,0,0-74.6,0"
+                  fill="none"
+                  stroke="#000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="24"
+                  id="mainIconPathAttribute"
+                ></path>
+              </svg>
             </h1>
           ) : (
             matches.map((match) => (

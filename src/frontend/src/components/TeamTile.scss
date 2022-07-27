@@ -21,4 +21,9 @@
   .TeamTileData {
     overflow-wrap: break-word;
   }
+
+  &:hover {
+    height: 93%;
+    width: 95%;
+  }
 }
