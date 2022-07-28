@@ -2,6 +2,7 @@ package com.vikash.ipldashboard.service;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -27,7 +28,8 @@ public class MatchService {
 	
 	public Match getMatch(Long matchId) {
 		
-		return this.matchRepository.getById(matchId);
+		Optional<Match> opt = this.matchRepository.findById(matchId);
+		return opt.get();
 		
 	}
 
