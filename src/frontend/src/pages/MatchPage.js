@@ -50,9 +50,9 @@ export const MatchPage = () => {
                   r="96"
                   fill="none"
                   stroke="#000"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="24"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="24"
                 ></circle>
                 <circle cx="92" cy="108" r="16"></circle>
                 <circle cx="164" cy="108" r="16"></circle>
@@ -60,9 +60,9 @@ export const MatchPage = () => {
                   d="M165.3,169.8a48,48,0,0,0-74.6,0"
                   fill="none"
                   stroke="#000"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="24"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="24"
                   id="mainIconPathAttribute"
                 ></path>
               </svg>

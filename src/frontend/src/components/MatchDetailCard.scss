@@ -21,4 +21,19 @@
       margin-bottom: 20px;
     }
   }
+  .GetMatch {
+    height: 5vh;
+    width: 17vw;
+    background-color: wheat;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+
+    &:hover {
+      background-color: azure;
+    }
+  }
 }

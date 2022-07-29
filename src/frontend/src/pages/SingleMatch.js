@@ -5,18 +5,17 @@ import './SingleMatch.scss'
 
 export const SingleMatch = () => {
   const { matchId } = useParams()
-  const [match, setMatch] = useState(null)
+  let [match, setMatch] = useState({})
 
   useEffect(() => {
     const fetchMatch = async () => {
       const response = await fetch(`http://localhost:8080/match/${matchId}`)
       const data = await response.json()
       setMatch(data)
-      console.log(data)
     }
 
     fetchMatch()
-  }, [matchId])
+  })
 
   return (
     <div>
@@ -24,9 +23,17 @@ export const SingleMatch = () => {
       <div className="SingleMatch">
         <div className="top-data">
           <div className="gsd">
-            <div>Game number : {match.gameNumber}</div>
-            <div>season : {match.season}</div>
-            <div>Date : {match.date}</div>
+            <p>
+              <span>Game number : </span> {match.gameNumber}
+            </p>
+
+            <p>
+              <span>Season :</span> {match.season}
+            </p>
+            <p>
+              <span>Date : </span>
+              {match.date}
+            </p>
           </div>
           <div className="umpires">
             <h2>Umpires</h2>
@@ -45,10 +52,15 @@ export const SingleMatch = () => {
         </div>
         <div className="toss">
           <div className="tossWinner">
-            <p>Toss Winner : {match.tossWinner}</p>
+            <p>
+              <span>Toss Winner :</span> {match.tossWinner}
+            </p>
           </div>
           <div className="tossDecision">
-            <p>Toss Decision : {match.tossDecision}</p>
+            <p>
+              <span>Toss Decision : </span>
+              {match.tossDecision}
+            </p>
           </div>
         </div>
 

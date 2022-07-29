@@ -5,6 +5,35 @@
     justify-content: space-between;
     margin: 20px;
     padding: 20px;
+
+    .gsd {
+      box-shadow: 0px 0px 2px 2px gray;
+      border-radius: 10px;
+      width: 20vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: 20px;
+
+      & > p {
+        & > span {
+          font-size: 1.1rem;
+          font-weight: 800;
+        }
+      }
+    }
+
+    .umpires {
+      box-shadow: 0px 0px 2px 2px gray;
+      border-radius: 10px;
+      width: 20vw;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-end;
+      padding-right: 10px;
+      flex-direction: column;
+    }
   }
 
   .teamvs {
@@ -13,6 +42,7 @@
     border-radius: 10px;
     box-shadow: 10px 10px 10px gray;
     margin: 20px;
+    background-color: wheat;
   }
 
   .venue {
@@ -42,6 +72,11 @@
       border-radius: 10px;
       padding: 20px;
       margin: 10px;
+      background-color: wheat;
+
+      & > p > span {
+        font-weight: 800;
+      }
     }
   }
 
@@ -66,6 +101,10 @@
 
     display: flex;
     justify-content: center;
-    background-color: green;
+    /* Created with https://www.css-gradient.com */
+    background: #85d5e5;
+    background: -webkit-linear-gradient(top left, #85d5e5, #2760b5);
+    background: -moz-linear-gradient(top left, #85d5e5, #2760b5);
+    background: linear-gradient(to bottom right, #85d5e5, #2760b5);
   }
 }
