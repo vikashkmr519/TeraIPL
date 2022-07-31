@@ -73,6 +73,7 @@ export const MatchPage = () => {
                 teamName={teamName}
                 match={match}
                 key={match.id}
+                
               />
             ))
           )}
