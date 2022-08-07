@@ -35,7 +35,7 @@ public class TeamController {
 		return this.teamService.findByTeamName(teamName, count);
 	}
 	
-	@GetMapping("team/{teamName}/matches")
+	@GetMapping("/team/{teamName}/matches")
 	public List<Match> getMatchesForTeam(@PathVariable("teamName") String teamName, @RequestParam("year") int year){
 		LocalDate startDate = LocalDate.of(year, 1, 1);
 		LocalDate endDate = LocalDate.of(year+1, 1, 1);
